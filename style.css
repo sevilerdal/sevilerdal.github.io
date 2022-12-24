@@ -36,7 +36,7 @@
   display: inline-flex;
   height: 100px;
 }
-  .text-buttontag{
+.text-buttontag{
     margin: 20px;
     padding: 10px;
     color: whitesmoke;
@@ -44,8 +44,8 @@
     font-size: 24px;
     
   transition: 0.2s ease-out;
-  }
-  .text-buttontag:hover{
+}
+.text-buttontag:hover{
     border-radius: 10%;
     color: rgb(174, 70, 243);
     box-shadow: rgb(54, 104, 156) 0px 30px 30px -5px;
