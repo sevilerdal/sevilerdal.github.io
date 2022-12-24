@@ -6,6 +6,7 @@
   html,body{
     display: grid;
     height: 100%;
+    width: 100%;
     place-items: center;
     text-align: center;
     float: left;
@@ -24,25 +25,49 @@
     color: whitesmoke;
     padding: 20px;
     font-family:"Caveat",serif ;
-    font-size: 48px;
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 0 0 3px #ff6e9f, 0 0 7px #94baff;
   }
 
 /*#region navbar text*/
+.navbar-ul{
+  list-style:none;
+  display: inline-flex;
+  height: 100px;
+}
   .text-buttontag{
+    margin: 20px;
+    padding: 10px;
     color: whitesmoke;
     font-family:"Source Sans Pro",serif-sans ;
     font-size: 24px;
+    
+  transition: 0.2s ease-out;
   }
   .text-buttontag:hover{
+    border-radius: 10%;
     color: rgb(174, 70, 243);
-    border-style:dashed;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
+    box-shadow: rgb(54, 104, 156) 0px 30px 30px -5px;
+    filter: hue-rotate(270deg);
   }
   /*#endregion*/
 
-  /*TODO ADD LINKS AND PICS*/
+.text-h4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px;
+  font-weight: 400;
+  font-size: 22px;
+  word-spacing: 2px;
+}
+.img-potrait{
+  box-sizing: border-box;
+    width: 200px;
+    border-radius: 50%;
+    border-style: none;
+    margin-bottom: 20px;
+    box-shadow: rgba(221, 216, 219, 0.4) 0px 5px, rgba(170, 164, 168, 0.3) 0px 10px, rgba(94, 92, 93, 0.2) 0px 15px, rgba(65, 64, 64, 0.1) 0px 20px, rgba(32, 32, 32, 0.05) 0px 25px;
+}
 /*#region card*/
 .center,.front-face,
 .contents,.back-face{
@@ -80,13 +105,28 @@
   perspective: 1000px;
   transform: translateY(-50%) translateZ(60px) scale(0.94);
 }
+.button-s{
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  background:transparent;
+  border-radius: 10px;
+  border-style: solid;
+  color: #e2e2e2;
+  box-shadow: rgb(204, 219, 232) 1px 1px 2px 0px inset, rgba(255, 255, 255, 0.5) -1px -1px 2px 1px inset;
+  text-decoration: none;
+}
+.button-s:hover{
+  color: #9dff4d;
+  border-style: inset ;
+}
 .front p{
   font-size: 35px;
   margin-bottom: 15px;
   color: white;
 }
 .front span{
-  font-size: 23px;
+  font-size: 18px;
   color: white;
 }
 .front p:after{
@@ -112,7 +152,7 @@
   padding-bottom: 5px;
 }
 .back span{
-  font-size: 25px;
+  font-size: 18px;
 }
 .center:hover > .back-face{
   transform: rotateY(0deg);
@@ -189,15 +229,39 @@
     width: 60px;
     float: left;
     overflow: hidden;
+    text-decoration: none;
     margin: 0.5px;
     background: transparent;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(194, 194, 194, 0.3);
     transition: all 0.3s ease-out;
   }
   .wrapper .button:hover{
     width:fit-content;
+  }
+.wrapper .button-gmail{
+  border: none;
+}
+  .wrapper .button .container-tooltip{
+    position: absolute;
+    width: auto;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fcff31;
+    border: 2px dashed;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%) translateY(-250%);
+    
+  }
+  
+  .wrapper .button:hover .container-tooltip{
+    visibility: visible;
+    opacity: 1;
   }
   .wrapper .button .icon{
     display: inline-block;
@@ -217,7 +281,7 @@
     color: #ffff;
   }
   .wrapper .button:nth-child(3):hover .icon{
-    background:rgb(252, 255, 49);
+    background:#fcff31;
     color: #ffff;
   }
   .wrapper .button .icon i {
@@ -231,6 +295,7 @@
     font-weight: 500;
     line-height: 60px;
     margin-left: 10px;
+    margin-right: 20px;
     
     transition: all 0.3s ease-out;
   }
@@ -248,25 +313,26 @@
 
   /*#region skills cards */
   .wrapper .card{
+    box-shadow: rgba(10,10,10, 0.17) 0px -23px 25px 0px inset, rgba(10,10,10, 0.15) 0px -36px 30px 0px inset, rgba(10,10,10, 0.1) 0px -79px 40px 0px inset, rgba(10,10,10, 0.06) 0px 2px 1px, rgba(10,10,10, 0.09) 0px 4px 2px, rgba(10,10,10, 0.09) 0px 8px 4px, rgba(10,10,10, 0.09) 0px 16px 8px, rgba(10,10,10, 0.09) 0px 32px 16px;
     background:transparent;
-    border: #4f565e;
-    border-style:inset;
+    border:none;
     width:250px;
     display: flex;
     align-items:center ;
     justify-content: space-between;
     padding: 20px;
     position: relative;
-    border-radius: 100px 20px 20px 100px;
   }
+
   .card .content {
     display: flex;
     align-items: center;
   }
   .card .content .name {
-    font-weight: 200;
+    font-weight: 400;
     margin-left: 80px;
     font-size: x-large;
+
     align-items: center;
     color: #fff;
   }
@@ -286,58 +352,56 @@
   }
   /*#endregion */
 
-  /*region contact me buttons */
-  .wrapper .button-bouncy {
-    width: 100px;
-    height : 200px ;
-    align-items: left;
-  }
-  .wrapper .button-bouncy .buttonLarge .image{
-    width: 100px;
-    height: 100px;
-    animation: bounce 1s infinite;
-  }
+ 
+  /*#region contact me buttons */
+.linkbutton {
+  border: 0px;
+  border-radius: 20px;
+  align-items: center;
+  height: auto;
+  width: auto;
+  box-sizing: border-box;
+  background: transparent;
+  text-decoration: none;
+  color: #bdbdbd;
+  padding:  10px 10px ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.linkbutton .image {
+  height: 72px;
+  width: 72px;
+}
+.linkbutton:hover
+{
+  border: 1px #303030 dotted;
+  font-weight: 500;
+  box-shadow: 0 0 50px #ececec;
+  color: #fffad1;
+  background: #303030;
+  transition: 0.3s;
+}
+  
+.linkbutton .container-tooltip{
+  position: absolute;
+  width: auto;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 2px dashed;
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease;
+}
 
-  @keyframes bounce {
-    10%{
-      height: 100px;
-      width: 100px;
-    }
-    20%{
-      height: 100px;
-      width: 90px;
-    }
-    30%{
-      height: 90px;
-      width: 80px;
-    }
-    40%{
-      height: 80px;
-      width: 105px;
-    }
-    50%{
-      height: 75px;
-      width: 110px;
-      transform: translateY(50px);
-    }
-    60%{
-      height: 80px;
-      width: 105px;
-    }
-    70%{
-      height: 90px;
-      width: 80px;
-    }
-    80%{
-      height: 100px;
-      width: 90px;
-    }
-    90%{
-      height: 100px;
-      width: 100px;
-    }
-    100%{
-      transform: translateY(0px);
-    }
-  }
-  /*endregion*/
+.linkbutton:hover .container-tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+  /*#endregion*/

@@ -42,13 +42,16 @@
           </div>
           <span>LinkedIn</span>
         </a>
-            
-        <a class="button" href="mailto:sevil.ozgur.erdal@gmail.com" style="color:#999;">
+        
+        <button class="button button-gmail" onclick="copyToClipboard('smail')" value="sevil.ozgur.erdal@gmail.com" id="smail" style="color:#999;">
           <div class="icon">
             <i class="fab fa-google"></i>
           </div>
-          <span>sevil.ozgur.erdal@gmail.com</span>
-        </a>
+          <span class="span-mail">sevil.ozgur.erdal@gmail.com</span>
+          <div class="container-tooltip">
+            click to copy
+        </div>
+        </button>
       </div>
     </div>
           <!--#endregion-->
@@ -57,10 +60,9 @@
           
       
 <!--#region navigation row-->
-    <div class="row ">
-      <nav class="navbar navbar-expand-sm navbar-light bg-dark "> 
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
+    <div class="row  ">
+      <nav class=" wrapper-nav"> 
+          <ul class="navbar-ul">
             <li class="nav-item active">
               <a href="#about" class="nav-link  text-buttontag">About</a>
             </li>
@@ -70,8 +72,10 @@
             <li class="nav-item active">
               <a href="#skills" class="nav-link  text-buttontag">Skills</a>
             </li>
+            <li class="nav-item active">
+              <a href="#contact" class="nav-link  text-buttontag">Contact</a>
+            </li>
           </ul>
-        </div>
       </nav>
     </div>
 
@@ -82,7 +86,8 @@
         <div class="row" >
           <div class="container-fluid">
             <p class="text-header" id="about">About</p>
-            <p class="text light h4">
+            <img src="./se.png"  class="img-potrait">
+            <p class="text-h4">
           
 I'm an independent game developer, currently based in Eskişehir/TR. I am self-employed, creating mobile games for clients or publishing in Umay Game Studio I'm co-founder of. 
 
@@ -103,7 +108,7 @@ I'm always on the lookout for interesting projects to work on, so if you want to
               <!--#region first project-->
             <div class="col">
               <div class="center">
-                <div class="front-face" style="background:maroon;">
+                <div class="front-face" style="background:rgb(7, 21, 48);">
                   <div class="contents front">
                     <p>Work Tracker</p>
                       <span>lightweight WPF application</span>
@@ -122,11 +127,11 @@ I'm always on the lookout for interesting projects to work on, so if you want to
                       <li>Classified data view</li>
                     </ul>
                   </span>
-                    <!--
+                    
                       <div class="icons">
-                        <a href="github.com/somerepo" class="fab fa-github "></a>
+                        <a href="https://github.com/sevilerdal/WorkTracker" class="fab fa-github button-s"></a>
                       </div>
-                    -->  
+                    
                   </div>
                 </div>
               </div>
@@ -135,7 +140,7 @@ I'm always on the lookout for interesting projects to work on, so if you want to
             <!--#region second project-->
             <div class="col">
                 <div class="center">
-                  <div class="front-face" style="background: rgb(107, 107, 21);">
+                  <div class="front-face" style="background: rgb(21, 107, 67);">
                   <div class="contents front">
                       <p>Location Alert</p>
                       <span>simple Android app that alerts based on location</span>
@@ -182,7 +187,7 @@ I'm always on the lookout for interesting projects to work on, so if you want to
                     </ul>
                   </span>
                 <div class="icons">
-                  <a href="https://play.google.com/store/apps/details?id=com.UmayGameDev.GoinDown" class="fab fa-google-play"></a>
+                  <a href="https://play.google.com/store/apps/details?id=com.UmayGameDev.GoinDown" class="fab fa-google-play button-s"></a>
                 </div>
               </div>
             </div>
@@ -236,7 +241,7 @@ I'm always on the lookout for interesting projects to work on, so if you want to
                     </ul>
                   </span>
                   <div class="icons">
-                      <a href="https://play.google.com/store/apps/details?id=com.UmayGameDev.ShooterTrack" class="fab fa-google-play"></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.UmayGameDev.ShooterTrack" class="fab fa-google-play button-s"></a>
                   </div>
                 </div>
             </div>
@@ -347,25 +352,38 @@ I'm always on the lookout for interesting projects to work on, so if you want to
         </div>
 </div>
           
-<!--c# unity as java sql html css blender git trello .net -->
 <!--#endregion-->
 
 <!--#region contact me row-->
         <div class="row" >
           <p class="text-header" id="contact">Contact Me</p>
+          
           <div class="wrapbuttons" style="flex-direction:row ;">
+            
             <div class="wrapper">
-              <div class="button-bouncy">
-                <a class="buttonLarge " href="https://github.com/sevilerdal" style="color:#999;"> 
-                  <img class="image" src="./Icons/githubL.png"></a> 
-              </div>
+              <a class="linkbutton " href="https://linkedin.com/in/sevil-erdal" > 
+                <img class="image" src="./Icons/lnkdnsml.png">
+                <p>LinkedIn</p>
+              </a> 
             </div>
-          <div class="wrapper">
-            <div class="button-bouncy">
-              <a class="buttonLarge " href="mailto:sevil.ozgur.erdal@gmail.com" style="color:#999;"> 
-                <img class="image" src="./Icons/gmailL.png"></a> 
+
+            <div class="wrapper">
+              <a class="linkbutton " href="https://calendly.com/sevilerdal" > 
+                <img class="image" src="./Icons/calendar.png">
+                <p>Calendly</p>
+              </a> 
             </div>
-          </div>
+                
+            <div class="wrapper">
+              <button onclick="copyToClipboard('smail')" class="linkbutton" id="smail" value="sevil.ozgur.erdal@gmail.com" >
+                <div class="container-tooltip">
+                    click to copy
+                </div>
+                <img class="image" src="./Icons/gmailL.png">
+                <p>Gmail</p>
+              </button>
+            </div>
+              
         </div>
       </div>
 
@@ -374,7 +392,12 @@ I'm always on the lookout for interesting projects to work on, so if you want to
 
   </div>
 </div>
-
+<script>
+  function copyToClipboard(element) {
+      var copyText = document.getElementById(element);
+      navigator.clipboard.writeText(copyText.value);
+}
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
