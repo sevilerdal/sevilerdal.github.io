@@ -37,7 +37,7 @@ html,body{
 }
 p, h4{
   text-align: left;
-  color: #c2c2c2;
+  color: white;
 }
 .header{
     margin-top: 15%;
@@ -49,14 +49,14 @@ p, h4{
 .name{
     font-size: 300%;
     font-weight: bold;
-    color: #c2c2c2;
+    color: white;
 }
 
 .info{
   margin-top: 10px;
   font-weight: bold;
   font-size: 18px;
-  color: #c2c2c2;
+  color: white;
 }
 
 .word{
@@ -98,7 +98,7 @@ p, h4{
   position: fixed;
   top: 20px;
   border-radius: 30px;
-  border: solid 1px #c2c2c2;
+  border: solid 1px white;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -170,7 +170,7 @@ h5{
 
 .table{
   text-align: left;
-  color: #c2c2c2;
+  color: white;
 }
 .exp-date{
   text-align: right;
