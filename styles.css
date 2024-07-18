@@ -1,0 +1,242 @@
+* {
+    font-family:'Roboto', 'Segoe UI', sans-serif ;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+html, body{
+    display: flex;
+    width: 100%;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: left;  
+    font-weight: 300;
+    color: white;
+    background: linear-gradient(-45deg, #040618, #140622, #6b1f97, #4256ca);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.header{
+    margin-top: 10vh;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.button-r{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    background-color: #dfa7ff11;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    max-width: fit-content;
+    align-items: center;
+}
+a img{
+    max-width: 48px;
+}
+a:hover{
+    box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+}
+.gthb-text{
+    text-decoration: none;
+    color: #dfa7ff;
+    font-size: 14px;
+}
+.buttonc-img{
+    border-radius: 20px;
+
+}
+.name{
+    font-size:54px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+h6{
+    text-align: center;
+    color:#dfa7ff;
+    text-shadow: 3px 2px 4px rgb(156, 156, 156);
+}
+.sec-title{
+    font-size: 24px;
+}
+
+.container{
+    background-color: #1e0a33;
+    max-width: 90vw;
+}
+
+.container .row{
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.animated-text{
+    font-size: 24px;
+    font-weight: 600;
+    min-width: 280px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Game Developer";
+    color: #9257df;
+    animation: words 8s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 120%;
+    background-color: #1e0a33;
+    border-left: 2px solid #9257df;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,50%{
+        content: "Game Developer";
+    }
+    51%,100%{
+        content: "Software Developer";
+    }
+}
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+.skill-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.skill h4, .game-skills h4, .skill-sf, .skill-p{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;    
+    background-color: rgba(165, 104, 104, 0.164);
+    border-radius: 5px;
+  }
+
+.game-skills h4 img, .skill img{
+    max-width: 24px;
+    margin-left: 5px;
+}
+.text-right{
+    text-align: right;
+    font-style: italic;
+}
+
+.ev-table .row, .exp-table .row{
+    margin: 5px 50px;
+    border: #8286a5 1px solid;
+    border-top: #8286a5 1px solid;
+}
+
+.ev-table .row:hover{
+    background-color: rgba(31, 31, 31, 0.3);
+}
+
+.img-fluid {
+    max-height: 300px;
+    width: auto;
+    margin: 5px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    margin: 10px;
+}
+
+.project-card, .ev-table, .exp-table, .skill-container{
+    background: #14062280;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.project-card .skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-card .project-title{
+    font-size: 24px;
+}
+
+.project-title{
+    width: max-content;
+    padding: 10px;
+    margin-top: 0;
+    background-color: #1e0a33;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.repo-button{
+    align-items: center;
+    justify-content: center;
+}
+.btn-row{
+    justify-items: center;
+    display: flex;
+    align-items: center;
+}

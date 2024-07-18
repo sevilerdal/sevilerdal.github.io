@@ -1,0 +1,27 @@
+.navbar{
+    z-index: 999;
+    position: fixed;
+    top: 20px;
+    border-radius: 30px;
+    border: solid 1px white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(150, 150, 150, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .nav-item{
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 3px 10px;
+    border: 1px transparent;
+  }
+  
+  .nav-item:hover,
+  .nav-item::selection{
+    background-color: rgba(177, 114, 185, 0.2);
+    border:solid 1px #9512d1;
+  }
+  
