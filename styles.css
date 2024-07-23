@@ -35,35 +35,7 @@ html, body{
     margin-top: 10vh;
     text-align: center;
 }
-a{
-    text-decoration: none;
-}
-.button-r{
-    display: flex;
-    text-align: center;
-    text-decoration: none;
-    background-color: #dfa7ff11;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
-    max-width: fit-content;
-    align-items: center;
-}
-a img{
-    max-width: 48px;
-}
-a:hover{
-    box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
-}
-.gthb-text{
-    text-decoration: none;
-    color: #dfa7ff;
-    font-size: 14px;
-}
-.buttonc-img{
-    border-radius: 20px;
 
-}
 .name{
     font-size:54px;
     font-weight: 600;
@@ -76,18 +48,19 @@ h6{
     color:#dfa7ff;
     text-shadow: 3px 2px 4px rgb(156, 156, 156);
 }
+
 .sec-title{
     font-size: 24px;
 }
 
 .container{
     background-color: #1e0a33;
-    max-width: 90vw;
+    max-width: 95%;
 }
 
 .container .row{
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .animated-text{
@@ -142,11 +115,6 @@ h6{
         width: calc(100% + 8px);
     }
 }
-.skill-container{
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
 
 .skill h4, .game-skills h4, .skill-sf, .skill-p{
     display: block;
@@ -175,7 +143,7 @@ h6{
 }
 
 .ev-table .row, .exp-table .row{
-    margin: 5px 50px;
+    margin: 5px;
     border: #8286a5 1px solid;
     border-top: #8286a5 1px solid;
 }
@@ -184,23 +152,18 @@ h6{
     background-color: rgba(31, 31, 31, 0.3);
 }
 
-.img-fluid {
-    max-height: 300px;
-    width: auto;
-    margin: 5px;
-}
-
 p{
     font-size: 18px;
     font-weight: 500;
-    padding: 20px;
-    margin: 10px;
+    padding: 5px;
 }
 
-.project-card, .ev-table, .exp-table, .skill-container{
+.ev-table, .exp-table, .skill-container{
     background: #14062280;
     font-weight: 500;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
@@ -208,35 +171,4 @@ p{
                 rgba(0, 0, 0, 0.12) 0px 4px 6px, 
                 rgba(0, 0, 0, 0.17) 0px 12px 13px, 
                 rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.project-card .skills{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project-card .project-title{
-    font-size: 24px;
-}
-
-.project-title{
-    width: max-content;
-    padding: 10px;
-    margin-top: 0;
-    background-color: #1e0a33;
-    border-radius: 0 0 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
-                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.repo-button{
-    align-items: center;
-    justify-content: center;
-}
-.btn-row{
-    justify-items: center;
-    display: flex;
-    align-items: center;
 }

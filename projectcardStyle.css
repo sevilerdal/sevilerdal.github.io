@@ -1,0 +1,83 @@
+.works-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wraps;
+}
+
+.project-card{
+    background: linear-gradient(180deg, rgba(73, 48, 94, 0.2) 0%, #14062280 25%);
+    width: 500px;
+    max-width: 95%;
+    border-radius: 10px;  
+    display:flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.project-card .skills{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.151);
+    border-radius: 10px;
+    width: 90%;
+    padding: 5px 0 5px 0;
+}
+.project-card .project-title{
+    font-size: 24px;
+}
+
+.project-title{
+    width: max-content;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.repo-button{
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.repo-button:hover{
+    box-shadow: rgba(204, 204, 204, 0.25) 0px 54px 55px, 
+                rgba(255, 195, 195, 0.12) 0px -12px 30px, 
+                rgba(200, 188, 255, 0.12) 0px 4px 6px, 
+                rgba(215, 163, 250, 0.17) 0px 12px 13px, 
+                rgba(223, 198, 255, 0.09) 0px -3px 5px;
+}
+
+.repo-button a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.gthb-text{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #e9c3ff;
+    font-size: 14px;
+}
+.container-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-fluid {
+    max-height: 300px;
+    width: auto;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+}

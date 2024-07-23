@@ -1,0 +1,43 @@
+.container-contact{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-button:hover{
+    height: min-content;
+    width: min-content;
+    background-color: rgba(177, 114, 185, 0.2);
+    border:solid 1px #9512d1;
+    border-radius: 20px;
+}
+
+.resume{
+    text-decoration: none;
+    background-color: #0b0016;
+    border-radius: 30px;
+    color: #dfa7ff;
+    width: fit-content;
+}
+
+.resume:hover{
+    background-color: rgba(177, 114, 185, 0.2);
+    border:solid 1px #9512d1;
+    border-radius: 30px;
+}
+
+.buttonc-img{
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:link{
+    color: white;
+}
+
+a img{
+    width: 60px;
+}

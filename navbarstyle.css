@@ -11,6 +11,9 @@
     backdrop-filter: blur(10px);
   }
   
+  .navbar-toggler{
+    border: none;
+  }
   .nav-item{
     margin: 0 auto;
     background-color: transparent;

@@ -16,6 +16,9 @@
         <!--Stylesheets-->
         <link href="/styles.css" rel="stylesheet">
         <link href="/navbarstyle.css" rel="stylesheet">
+        <link href="/projectcardStyle.css" rel="stylesheet">
+        <link href="/contactstyle.css" rel="stylesheet">
+
 
         <title>Sevil Erdal</title>
     </head>
@@ -34,7 +37,7 @@
                         <li class="nav-item"><a class="nav-link" href="#about">About</a><li>
                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a><li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a><li> 
-                        <li class="nav-item"><a class="nav-link"href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,9 +49,7 @@
             <div class="row" id="#home">
                 <div class="col">
                     <div class="header">
-                        <div contenteditable class="name">
-                            Hi! I'm Sevil.
-                        </div>
+                        <div contenteditable class="name">Hi! I'm Sevil.</div>
                         <div class="animated-text">
                             I'm a <span></span>
                         </div>
@@ -58,19 +59,27 @@
 
             <!--Contact buttons-->
             <div class="row">
-                <div class="col" style="display: flex;">
-                    <div class="container-contact" style="align-items: center;">
-                        <a href="https://www.linkedin.com/in/sevil-erdal/">
-                            <img class="buttonc-img" src="/Icons/icon-linkedin.png">
-                        </a>
-                        <a href="https://github.com/sevilerdal">
-                            <img class="buttonc-img" src="/Icons/icon-github.png">
-                        </a>
+                <div class="col">
+                    <div class="container-contact">
+                        <div class="contact-button">
+                            <a href="https://www.linkedin.com/in/sevil-erdal/">
+                                <img class="buttonc-img" src="/Icons/icon-linkedin.png"></a>
+                        </div>
+                       <div class="contact-button">
+                         <a href="https://github.com/sevilerdal">
+                            <img class="buttonc-img" src="/Icons/icon-github.png"></a>
+                       </div>
+                       <div class="contact-button">
                         <a href="mailto:sevil.ozgur.erdal@gmail.com">
-                            <img class="buttonc-img" src="/Icons/icon-gmail.png">
-                        </a>
-                        <h6>Contact me!</h6>
+                            <img class="buttonc-img" src="/Icons/icon-gmail.png"></a>
+                       </div>
                     </div>
+                    <div class="row">
+                       <div class="resume">
+                        <a href="resume.pdf" download="SevilErdalResume.pdf" class="download-button">Download Resume
+                            <img src="Icons/icon-download.png" style="max-width: 48px; height: auto; padding: 5px; border-radius: 10px; margin: 5px;" alt="">
+                        </a>
+                    </div> 
                 </div>
             </div>
 
@@ -149,111 +158,67 @@
                         <h5>Programming </h5>
                         <div class="skill-container" style="display: flex;">
                             <div class="skill">
-                                <h4>C#
-                                <img src="Icons/cslang.png" alt="">
-
-                                </h4>
+                                <h4>C#<img src="Icons/cslang.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>Java
-                                <img src="Icons/java.png" alt="">
-                                </h4>
+                                <h4>Java<img src="Icons/java.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>C
-                                <img src="Icons/clang.png" alt="">
-                                </h4>
+                                <h4>C<img src="Icons/clang.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>Python
-                                    <img src="Icons/python.png" alt="">
-                                </h4>
+                                <h4>Python<img src="Icons/python.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>SQL
-                                    <img src="Icons/sql.png" alt="">
-                                </h4>
+                                <h4>SQL<img src="Icons/sql.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>JavaScript
-                                    <img src="Icons/icon-js.png" alt="">
-                                </h4>
+                                <h4>JavaScript<img src="Icons/icon-js.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>HTML
-                                    <img src="Icons/html5.png" alt="">
-                                </h4>
+                                <h4>HTML<img src="Icons/html5.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>CSS
-                                    <img src="Icons/css3.png" alt="">
-                                </h4>
+                                <h4>CSS<img src="Icons/css3.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>Bootstrap
-                                    <img src="Icons/icon-bootstrap.png" alt="">
-                                </h4>
+                                <h4>Bootstrap<img src="Icons/icon-bootstrap.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>Move
-                                    <img src="Icons/move.png" alt="">
-                                </h4>
-                            </div>
-                            
-                            <div class="skill">
-                                <h4>Godot
-                                    <img src="Icons/icon-godot.png" alt="">
-                                </h4>
+                                <h4>Move<img src="Icons/move.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>Android Studio
-                                    <img src="Icons/astudio.png" alt="">
-                                </h4>
+                                <h4>Godot<img src="Icons/icon-godot.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>.NET Framework
-                                    <img src="Icons/icon-net.png" alt="">
-                                </h4>
+                                <h4>Android Studio<img src="Icons/astudio.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>ASP.NET Core
-                                    <img src="Icons/icon-asp.png" alt="">
-                                </h4>
+                                <h4>.NET Framework<img src="Icons/icon-net.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>Visual Studio
-                                    <img src="Icons/vs.png" alt="">
-                                </h4>
+                                <h4>ASP.NET Core<img src="Icons/icon-asp.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>Eclipse
-                                    <img src="Icons/eclipse.png" alt="">
-                                </h4>
+                                <h4>Visual Studio<img src="Icons/vs.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>Flask
-                                    <img src="Icons/icon-flask.png" alt="">
-                                </h4>
+                                <h4>Eclipse<img src="Icons/eclipse.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>AJAX
-                                    <img src="Icons/icon-ajax.png" alt="">
-                                </h4>
+                                <h4>Flask<img src="Icons/icon-flask.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>SQLite
-                                    <img src="Icons/icon-sqlite.png" alt="">
-                                </h4>
+                                <h4>AJAX<img src="Icons/icon-ajax.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>MySQL
-                                    <img src="Icons/icon-mysql.png" alt="">
-                                </h4>
+                                <h4>SQLite<img src="Icons/icon-sqlite.png" alt=""></h4>
                             </div>
                             <div class="skill">
-                                <h4>MongoDB
-                                    <img src="Icons/icon-mangodb.png" alt="">
-                                </h4>
+                                <h4>MySQL<img src="Icons/icon-mysql.png" alt=""></h4>
+                            </div>
+                            <div class="skill">
+                                <h4>MongoDB<img src="Icons/icon-mangodb.png" alt=""></h4>
                             </div>
                         </div>
                     </div>
@@ -268,7 +233,6 @@
                             <div class="skill-sf">Leadership</div>
                             <div class="skill-sf">Planning</div>
                             <div class="skill-sf">Collaboration</div>
-
                         </div> 
                     </div>
                         
@@ -332,8 +296,6 @@
                         <div class="col text-right">January 2024</div>
                         <div class="col">Cyber Security Day</div>
                     </div>
-                    
-                        
                 </div>
             </div>
 
@@ -342,31 +304,30 @@
             <div class="row" id="projects">
                 <div class="col">
                     <h4 class="sec-title">Projects</h4>
-                    
                     <div class="works-container">
 
-                            <!-- <div class="project-card" style="background-color: rgba(255, 192, 203, 0.219);">
+                            <div class="project-card" style="background-color: rgba(255, 192, 203, 0.219);">
                                 <div class="row">
                                     <div class="row">
                                     <h5 class="project-title" style="background-color: rgba(216, 112, 147, 0.603);">Code Samples</h5>
                                 </div>
                                 </div>
                                 <div class="repo-button">
-                                    <a href="https://github.com/sevilerdal">
+                                    <a href="https://github.com/sevilerdal/CodeSamples/">
                                     <img class="button-img" src="/Icons/gthb.png">
                                     <h4 class="gthb-text">View on Github</h4>
                                 </a>
                                 </div>
-                            </div> -->
-
+                            </div>
                             <div class="project-card">
                                 <div class="row">
                                     <div class="row">
                                     <h5 class="project-title">Food Blast</h5>
-                                </div>
-                                    <img class="img-fluid" src="gifs/fblast.gif">
-                                </div>
-                                
+                                    </div>
+                                    <div class="container-img">
+                                        <img class="img-fluid" src="gifs/fblast.gif">
+                                    </div>
+                                </div> 
                                 <div class="row">
                                     <div class="skills">
                                         <div class="skill-p">C#</div>
@@ -387,16 +348,18 @@
                                     <div class="row">
                                     <h5 class="project-title">Safe Password Generator</h5>
                                 </div>
-                                <div class="repo-button">
+                                <div class="row">
+                                    <div class="repo-button">
                                         <a href="https://github.com/sevilerdal/SafePasswordGenerator">
-                                        <img class="button-img" src="/Icons/gthb.png">
-                                        <h4 class="gthb-text">View on Github</h4>
-                                    </a>
+                                            <img class="button-img" src="/Icons/gthb.png">
+                                            <h4 class="gthb-text">View on Github</h4>
+                                        </a>
                                     </div>
-                                    
-                                    <img class="img-fluid" src="gifs/spg.gif">
                                 </div>
-                                
+                                    <div class="container-img">
+                                        <img class="img-fluid" src="gifs/spg.gif">
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="skills">
                                         <div class="skill-p">Chrome Extension</div>
@@ -413,7 +376,9 @@
                                 <h5 class="project-title">Restoration 3D</h5>
                             </div>
                             <div class="row">
-                                <img class="img-fluid" src="gifs/restoration.gif">
+                                <div class="container-img">
+                                    <img class="img-fluid" src="gifs/restoration.gif">
+                                </div>
                             </div>
                             
                             <div class="row">
@@ -456,14 +421,14 @@
 
                             <div class="project-card">
                                 <div class="row">
-                                    <div class="row">
                                     <h5 class="project-title">Bottled Clicker</h5>
                                 </div>
-                                <div class="repo-button">
+                                <div class="row">
+                                    <div class="repo-button">
                                         <a href="https://github.com/sevilerdal/Bottled-Clicker">
-                                        <img class="button-img" src="/Icons/gthb.png">
-                                        <h4 class="gthb-text">View on Github</h4>
-                                    </a>
+                                            <img class="button-img" src="/Icons/gthb.png">
+                                            <h4 class="gthb-text">View on Github</h4>
+                                        </a>
                                     </div>
                                 </div>
                                 
@@ -484,16 +449,18 @@
                                 <div class="row">
                                 <h5 class="project-title">Desk</h5>
                                 </div>
-                                <div class="repo-button">
-                                    <a href="https://github.com/sevilerdal/Desk--CS50-FP">
-                                        <img class="button-img" src="/Icons/gthb.png">
-                                        <h4 class="gthb-text">View on Github</h4>
-                                    </a>
+                                <div class="row">
+                                    <div class="repo-button">
+                                        <a href="https://github.com/sevilerdal/Desk--CS50-FP">
+                                            <img class="button-img" src="/Icons/gthb.png">
+                                            <h4 class="gthb-text">View on Github</h4>
+                                        </a>
+                                    </div>
                                 </div>
-                                
-                                <img class="img-fluid" src="gifs/desk.gif">
+                                <div class="container-img">
+                                    <img class="img-fluid" src="gifs/desk.gif">
+                                </div>
                             </div>
-                            
                             <div class="row">
                                 <div class="skills">
                                     <div class="skill-p">Python</div>
@@ -510,8 +477,6 @@
                             </div>
                         </div>
     
-                        
-    
                         <div class="project-card">
                             <div class="row">
                                 <h5 class="project-title">Storage Simulator</h5>
@@ -523,9 +488,10 @@
                                 </a>
                             </div>
                             <div class="row">
-                                <img class="img-fluid" src="gifs/storage.gif">
+                                <div class="container-img">
+                                    <img class="img-fluid" src="gifs/storage.gif">
+                                </div>
                             </div>
-                            
                             <div class="row">
                                 <div class="skills">
                                     <div class="skill-p">C#</div>
@@ -559,13 +525,18 @@
                             </div>
                         </div>
     
-                        <div class="project-card">
-                            <div class="row">
-                                <img class="img-fluid" src="gifs/down.gif">
-                                <img class="img-fluid" src="gifs/strtgy.gif">
-                            </div>
+                        <div class="project-card">      
                             <div class="row">
                                 <h5 class="project-title">Other Games</h5>
+
+                            </div>                          
+                            <div class="row">
+                                <div class="container-img">
+                                    <img class="img-fluid" src="gifs/down.gif">
+                                    <img class="img-fluid" src="gifs/strtgy.gif">
+                                </div>
+                            </div>
+                            <div class="row">
                             </div>
                             <div class="row">
                                 <div class="skills">
@@ -588,16 +559,21 @@
             <div class="row">
                 <div class="col" style="display: flex;">
                     <div class="container-contact" style="align-items: center;">
-                        <a href="https://www.linkedin.com/in/sevil-erdal/">
-                            <img class="buttonc-img" src="/Icons/icon-linkedin.png">
-                        </a>
-                        <a href="https://github.com/sevilerdal">
-                            <img class="buttonc-img" src="/Icons/icon-github.png">
-                        </a>
-                        <a href="mailto:sevil.ozgur.erdal@gmail.com">
-                            <img class="buttonc-img" src="/Icons/icon-gmail.png">
-                        </a>
-                        <h6>Contact me!</h6>
+                        <div class="contact-button">
+                            <a href="https://www.linkedin.com/in/sevil-erdal/">
+                                <img class="buttonc-img" src="/Icons/icon-linkedin.png">
+                            </a>
+                        </div>
+                        <div class="contact-button">
+                            <a href="https://github.com/sevilerdal">
+                                <img class="buttonc-img" src="/Icons/icon-github.png">
+                            </a>
+                        </div>
+                        <div class="contact-button">
+                            <a href="mailto:sevil.ozgur.erdal@gmail.com">
+                                <img class="buttonc-img" src="/Icons/icon-gmail.png">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
