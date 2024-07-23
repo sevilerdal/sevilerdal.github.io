@@ -24,7 +24,6 @@
   
   .nav-item:hover,
   .nav-item::selection{
-    background-color: rgba(177, 114, 185, 0.2);
     border:solid 1px #9512d1;
   }
   

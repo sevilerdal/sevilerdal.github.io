@@ -6,7 +6,6 @@
 .contact-button:hover{
     height: min-content;
     width: min-content;
-    background-color: rgba(177, 114, 185, 0.2);
     border:solid 1px #9512d1;
     border-radius: 20px;
 }
@@ -20,7 +19,6 @@
 }
 
 .resume:hover{
-    background-color: rgba(177, 114, 185, 0.2);
     border:solid 1px #9512d1;
     border-radius: 30px;
 }
